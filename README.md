@@ -11,12 +11,13 @@ Description of Files Used:
 <h3>Observation:</h3>
   <hr>
   
-  These are the two graphs we get after we execute our code. 
+  These are the three graphs we get after we execute our code. 
   
-  ![image](https://user-images.githubusercontent.com/99542174/169622677-b6ed6002-3559-4be9-88ed-0bf4c4de41c0.png)
-  
-  The graph on the left is of the Min Funding Revocation Algorithm, whereas the one on the right is of the plain oldest removal.
+  ![image](https://user-images.githubusercontent.com/99542174/169899171-de5e3328-9247-4399-811d-f8e3301a3cf0.png)
 
   
-  Please note that original replacement policy (of removing the oldest switch irrespective of data transferred) has packet sizes in the domain of 1e7; whereas the replacement policy used by Min-Funding Revocation Algorithm is of the order of magnitude 1e9, which is huge compared to the former.
+  The graph on the left is of the Min Funding Revocation Algorithm, whereas the one in the middle is of the plain oldest removal. The one on the right is the scenario where we do not consider any dropping of the switches once a certain limit is reaches.
+
+  
+  Please note that original replacement policy (of removing the oldest switch irrespective of data transferred) has packet sizes in the domain of 1e7; whereas the replacement policy used by Min-Funding Revocation Algorithm is of the order of magnitude 1e9, which is huge compared to the former, and also closer to the "accurate" value of 1e10 that we get once we consider all switches are kept on with no polling and switching off of them.
   
